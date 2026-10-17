@@ -1,7 +1,11 @@
 # tmux config
 
-Copy `.tmux.conf` and `.tmux-theme.conf` to your home directory, then reload with
-`tmux source-file ~/.tmux.conf`.
+Clone this repo to `~/.config/tmux` (tmux 3.1+ reads `~/.config/tmux/tmux.conf`),
+then reload with `tmux source-file ~/.config/tmux/tmux.conf`.
+
+```sh
+git clone https://github.com/mayaanhafeez/tmuxconf.git ~/.config/tmux
+```
 
 Colours follow the terminal's ANSI palette. The bottom status bar uses plain
 window labels without a session label, hostname, bold text, or underlining.
