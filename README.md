@@ -14,5 +14,7 @@ The prefix is Ctrl-Space (Ctrl-B also works). Prefix + e opens a popup shell in
 the current pane's directory. Escape is passed through to the shell; close the
 popup with `exit` or Ctrl-D at an empty prompt.
 
-Prefix + q reloads the configuration. The optional prefix + ? help popup uses
-`~/omarchy/bin/omarchy-menu-tmux-keybindings` if you have Omarchy installed.
+Prefix + q reloads the configuration. Prefix + ? opens a popup listing the bindings
+live in the running server (`keybindings.sh`): this config's own bindings first,
+grouped by whether they need the prefix, then tmux's defaults. A binding shows up as
+yours when it has a `bind -N "description"` in `tmux.conf`, so give new bindings one.
